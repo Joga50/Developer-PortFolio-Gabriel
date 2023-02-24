@@ -1,3 +1,18 @@
+function changeTheme() {
+  let body = document.body;
+  let themeButton = document.getElementById("theme-button");
+
+  if (body.classList.contains("dark-mode")) {
+    body.classList.remove("dark-mode");
+    body.classList.add("light-mode");
+    themeButton.innerHTML = '<i class="bx bx-moon"></i>';
+  } else {
+    body.classList.remove("light-mode");
+    body.classList.add("dark-mode");
+    themeButton.innerHTML = '<i class="bx bx-sun"></i>';
+  }
+}
+console.log(changeTheme(), changeTheme);
 const hedaer = document.querySelector("header");
 window.addEventListener("scroll", function () {
   hedaer.classList.toggle("sticky", window.scrollY > 100);
@@ -17,16 +32,24 @@ window.onscroll = () => {
 const portfolio = [
   {
     img: "./assets/socialMedia.png",
-    name: "MERN, Social media app",
-    description:
-      "Complete social media app using MongoDB, Expresjs, Reactjs, Nodejs",
+
+    name: "Complete social media app using MongoDB, Expresjs, Reactjs, Nodejs",
+    description: "MERN, Social media app",
+
     url: "React-JavaSpringboot-Fullstack-application",
   },
   {
     img: "./assets/springboot-CRUD.png",
-    name: "CRUD, user register and login application",
-    description: "React and java springboot application with MySQL database",
+    name: "React and java springboot application with MySQL database",
+    description: "CRUD, user register and login application",
+
     url: "MERN-SocialMedia-Fullstack-Application",
+  },
+  {
+    img: "./assets/FEreactapp.png",
+    name: "Photo gallery app using React, redux, mui materials, axios",
+    description: "Photo gallery app",
+    url: "Photo-gallery",
   },
 ];
 
