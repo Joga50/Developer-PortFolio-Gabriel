@@ -31,25 +31,28 @@ window.onscroll = () => {
 };
 const portfolio = [
   {
+    img: "./assets/photoapp.png",
+    name: "Photo gallery app using React, redux, mui materials, axios",
+    description: "Photo gallery app",
+    url: "Photo-gallery",
+    vercelName: "https://photo-gallery-demo.vercel.app/",
+  },
+  {
     img: "./assets/socialMedia.png",
 
     name: "Complete social media app using MongoDB, Expresjs, Reactjs, Nodejs",
     description: "MERN, Social media app",
-
-    url: "React-JavaSpringboot-Fullstack-application",
+    vercelName:
+      "http://github.com/joga50/MERN-SocialMedia-Fullstack-Application",
+    url: "MERN-SocialMedia-Fullstack-Application",
   },
   {
     img: "./assets/springboot-CRUD.png",
     name: "React and java springboot application with MySQL database",
     description: "CRUD, user register and login application",
-
-    url: "MERN-SocialMedia-Fullstack-Application",
-  },
-  {
-    img: "./assets/FEreactapp.png",
-    name: "Photo gallery app using React, redux, mui materials, axios",
-    description: "Photo gallery app",
-    url: "Photo-gallery",
+    vercelName:
+      "http://github.com/joga50/React-JavaSpringboot-Fullstack-application",
+    url: "React-JavaSpringboot-Fullstack-application",
   },
 ];
 
@@ -65,7 +68,7 @@ const html = portfolio
       <div>
      <a href="http://github.com/joga50/${item.url}" target="_blank"> <i class='bx bxl-github'></i></a>
      
-     <a href="#" ><i class='bx bx-link-external'></i></a>
+     <a href="${item.vercelName}" target="_blank"><i class='bx bx-link-external'></i></a>
      </div>
       </div>
     </div>
