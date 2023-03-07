@@ -389,8 +389,8 @@ header.sticky {
   cursor: pointer;
 }
 .portfolio-content {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .project {

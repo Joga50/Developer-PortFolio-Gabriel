@@ -54,6 +54,13 @@ const portfolio = [
       "http://github.com/joga50/React-JavaSpringboot-Fullstack-application",
     url: "React-JavaSpringboot-Fullstack-application",
   },
+  {
+    img: "./assets/portfoliorcikandmorty.png",
+    name: "React, Tailwindcss/Login-Register-Logout localstorage, Redux Rick and morty cards visor",
+    description: "React cards visor",
+    vercelName: "https://react-challenge-joga50.vercel.app/",
+    url: "rankcv-react-challenge",
+  },
 ];
 
 const html = portfolio
