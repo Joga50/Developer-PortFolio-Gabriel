@@ -61,6 +61,13 @@ const portfolio = [
     vercelName: "https://react-challenge-joga50.vercel.app/",
     url: "rankcv-react-challenge",
   },
+  {
+    img: "./assets/csharpatmconsoleapp.png",
+    name: "ATM console with C#",
+    description: "Basic ATM console with C",
+    vercelName: "https://github.com/Joga50/atm-console-c-",
+    url: "atm-console-c-"
+  }
 ];
 
 const html = portfolio
