@@ -31,10 +31,16 @@ window.onscroll = () => {
 };
 const portfolio = [
   {
+    img: "./assets/epbg.png",
+    name: "React - SpringBoot fullstack booking application",
+    description: "Event Booking App",
+  url: "http://www.eventplace.s3-website.us-east-2.amazonaws.com/",
+    vercelName: "http://www.eventplace.s3-website.us-east-2.amazonaws.com/",
+  },{
     img: "./assets/photoapp.png",
     name: "Photo gallery app using React, redux, mui materials, axios",
     description: "Photo gallery app",
-    url: "Photo-gallery",
+    url: "http://github.com/joga50/Photo-gallery",
     vercelName: "https://photo-gallery-demo.vercel.app/",
   },
   {
@@ -44,7 +50,7 @@ const portfolio = [
     description: "MERN, Social media app",
     vercelName:
       "http://github.com/joga50/MERN-SocialMedia-Fullstack-Application",
-    url: "MERN-SocialMedia-Fullstack-Application",
+    url: "http://github.com/joga50/MERN-SocialMedia-Fullstack-Application",
   },
   {
     img: "./assets/springboot-CRUD.png",
@@ -52,21 +58,21 @@ const portfolio = [
     description: "CRUD, user register and login application",
     vercelName:
       "http://github.com/joga50/React-JavaSpringboot-Fullstack-application",
-    url: "React-JavaSpringboot-Fullstack-application",
+    url: "http://github.com/joga50/React-JavaSpringboot-Fullstack-application",
   },
   {
     img: "./assets/portfoliorcikandmorty.png",
     name: "React, Tailwindcss/Login-Register-Logout localstorage, Redux Rick and morty cards visor",
     description: "React cards visor",
     vercelName: "https://react-challenge-joga50.vercel.app/",
-    url: "rankcv-react-challenge",
+    url: "http://github.com/joga50/rankcv-react-challenge",
   },
   {
     img: "./assets/csharpatmconsoleapp.png",
     name: "ATM console with C#",
     description: "Basic ATM console with C",
     vercelName: "https://github.com/Joga50/atm-console-c-",
-    url: "atm-console-c-"
+    url: "http://github.com/joga50/atm-console-c-"
   }
 ];
 
@@ -80,7 +86,7 @@ const html = portfolio
       
       <p>${item.description}</p>
       <div>
-     <a href="http://github.com/joga50/${item.url}" target="_blank"> <i class='bx bxl-github'></i></a>
+     <a href="${item.url}" target="_blank"> <i class='bx bxl-github'></i></a>
      
      <a href="${item.vercelName}" target="_blank"><i class='bx bx-link-external'></i></a>
      </div>
