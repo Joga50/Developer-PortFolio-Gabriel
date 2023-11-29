@@ -137,6 +137,12 @@ span {
   display: flex;
 }
 
+.certificate {
+}
+
+/* .certificate-img {
+  height: 30vw;
+} */
 .navlist a {
   color: var(--second-color);
   font-size: 17px;
@@ -242,7 +248,17 @@ section {
   font-weight: 600;
   transition: all 0.45s ease;
 }
+.btn-certificate {
+  display: inline-block;
+  padding: 12px 28px;
 
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.45s ease;
+}
 .btn:hover {
   transform: scale(0.9);
 }
@@ -392,7 +408,10 @@ header.sticky {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
+.certificate-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .project {
   position: relative;
   overflow: hidden;
@@ -464,6 +483,81 @@ header.sticky {
   color: rgb(255, 255, 255);
 }
 .project:hover .project-layer {
+  height: 100%;
+}
+/* CERTIFICATE  */
+
+.certificate {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+
+  margin: 30px 8px 8px 8px;
+}
+.certificate img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: trnasform 0.5s;
+}
+.certificate:hover img {
+  transform: scale(1.1);
+}
+.certificate-layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #045e9f);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+.certificate-layer div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.certificate-layer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.certificate-layer p {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+.certificate-layer i {
+  color: rgb(0, 0, 0);
+
+  margin: 20px 7px 7px 0;
+  font-size: 37px;
+  background: rgb(176, 176, 176);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.certificate-layer i:hover {
+  color: rgb(255, 255, 255);
+}
+.certificate:hover .certificate-layer {
   height: 100%;
 }
 
@@ -629,6 +723,10 @@ form textarea {
 
 @media (max-width: 920px) {
   .portfolio-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .certificate-content {
     display: flex;
     flex-direction: column;
   }

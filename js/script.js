@@ -29,19 +29,14 @@ window.onscroll = () => {
   menu.classList.remove("bx-x");
   navlist.classList.remove("open");
 };
+
 const portfolio = [
   {
     img: "./assets/epbg.png",
     name: "React - SpringBoot fullstack booking application",
     description: "Event Booking App",
-  url: "http://www.eventplace.s3-website.us-east-2.amazonaws.com/",
+    url: "http://www.eventplace.s3-website.us-east-2.amazonaws.com/",
     vercelName: "http://www.eventplace.s3-website.us-east-2.amazonaws.com/",
-  },{
-    img: "./assets/photoapp.png",
-    name: "Photo gallery app using React, redux, mui materials, axios",
-    description: "Photo gallery app",
-    url: "http://github.com/joga50/Photo-gallery",
-    vercelName: "https://photo-gallery-demo.vercel.app/",
   },
   {
     img: "./assets/socialMedia.png",
@@ -52,6 +47,14 @@ const portfolio = [
       "http://github.com/joga50/MERN-SocialMedia-Fullstack-Application",
     url: "http://github.com/joga50/MERN-SocialMedia-Fullstack-Application",
   },
+  {
+    img: "./assets/photoapp.png",
+    name: "Photo gallery app using React, redux, mui materials, axios",
+    description: "Photo gallery app",
+    url: "http://github.com/joga50/Photo-gallery",
+    vercelName: "https://photo-gallery-demo.vercel.app/",
+  },
+
   {
     img: "./assets/springboot-CRUD.png",
     name: "React and java springboot application with MySQL database",
@@ -67,13 +70,6 @@ const portfolio = [
     vercelName: "https://react-challenge-joga50.vercel.app/",
     url: "http://github.com/joga50/rankcv-react-challenge",
   },
-  {
-    img: "./assets/csharpatmconsoleapp.png",
-    name: "ATM console with C#",
-    description: "Basic ATM console with C",
-    vercelName: "https://github.com/Joga50/atm-console-c-",
-    url: "http://github.com/joga50/atm-console-c-"
-  }
 ];
 
 const html = portfolio
